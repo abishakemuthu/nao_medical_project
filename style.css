@@ -103,6 +103,7 @@ body{
   margin-top: 20px;
   font-size: 17px;
   border-radius: 5px;
+  background-color: black;
 }
 
 @media (max-width: 660px){
@@ -125,7 +126,7 @@ body{
   .container button{
     padding: 13px;
     font-size: 16px;
-    border-radius: 5px;
+    background-color: black;
   }
   .controls .row select{
     font-size: 16px;
