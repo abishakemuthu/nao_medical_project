@@ -120,19 +120,17 @@ body{
   .text-input textarea{
     height: 200px;
   }
-  .controls .row .icons{
-    width: 13%;
-  }
+
   .container button{
     padding: 13px;
     font-size: 16px;
     background-color: black;
   }
   .controls .row select{
-    font-size: 16px;
+    font-size: 9px;
   }
   .controls .exchange{
-    font-size: 14px;
+    font-size: 7px;
   }
 }
 
