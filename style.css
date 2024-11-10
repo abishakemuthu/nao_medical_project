@@ -121,7 +121,7 @@ body{
     height: 200px;
   }
   .controls .row .icons{
-    display: none;
+    width: 13%;
   }
   .container button{
     padding: 13px;
