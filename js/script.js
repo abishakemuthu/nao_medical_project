@@ -30,14 +30,14 @@ selectTag.forEach((tag, id) => {
 });
 
 
-exchageIcon.addEventListener("click", () => {
-    let tempText = fromText.value,
-    tempLang = selectTag[0].value;
-    fromText.value = toText.value;
-    toText.value = tempText;
-    selectTag[0].value = selectTag[1].value;
-    selectTag[1].value = tempLang;
-});
+// exchageIcon.addEventListener("click", () => {
+//     let tempText = fromText.value,
+//     tempLang = selectTag[0].value;
+//     fromText.value = toText.value;
+//     toText.value = tempText;
+//     selectTag[0].value = selectTag[1].value;
+//     selectTag[1].value = tempLang;
+// });
 
 fromText.addEventListener("keyup", () => {
     if(!fromText.value) {
@@ -105,8 +105,8 @@ function speech(target) {
 if ('webkitSpeechRecognition' in window) {
     const recognition = new webkitSpeechRecognition();
     recognition.lang = 'en-US'; // Set the default language
-    recognition.interimResults = false; // Set to true if you want to see interim results
-    recognition.continuous = false; // Stop automatically after speaking
+    // recognition.interimResults = false; // Set to true if you want to see interim results
+    // recognition.continuous = false; // Stop automatically after speaking
 
     // Toggle recording when the mic button is clicked
     let isRecording = false;
