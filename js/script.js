@@ -1,6 +1,6 @@
 const fromText = document.querySelector(".from-text"),
 toText = document.querySelector(".to-text"),
-exchageIcon = document.querySelector(".exchange"),
+//exchageIcon = document.querySelector(".exchange"),
 selectTag = document.querySelectorAll("select"),
 icons = document.querySelectorAll(".row i");
 translateBtn = document.querySelector("button"),
@@ -51,6 +51,7 @@ translateBtn.addEventListener("click", () => {
     translateTo = selectTag[1].value;
     if(!text) return;
     toText.setAttribute("placeholder", "Translating...");
+    // My Memory Translation API
     let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`;
     fetch(apiUrl).then(res => res.json()).then(data => {
         toText.value = data.responseData.translatedText;
